@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Red Ball Color Blocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>🔴 Register</h1>
+        <p>Buat akun untuk mulai bermain</p>
+
+        <form id="registerForm">
+            <label>Username</label>
+            <input
+                type="text"
+                id="registerUsername"
+                placeholder="Masukkan username"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Masukkan password"
+                required
+            >
+
+            <label>Konfirmasi Password</label>
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Ulangi password"
+                required
+            >
+
+            <button type="submit" class="btn primary full">
+                Daftar
+            </button>
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <p class="form-link">
+            Sudah punya akun?
+            <a href="login.html">Login di sini</a>
+        </p>
+
+        <a href="index.html" class="back-link">← Kembali ke Home</a>
+    </div>
+</body>
+</html>

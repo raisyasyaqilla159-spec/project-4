@@ -1,0 +1,501 @@
+/* =========================
+   RESET DAN TAMPILAN UMUM
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #101426;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #202b45;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: #ff4d5a;
+    font-size: 21px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar nav a:hover {
+    color: #ff5964;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.primary {
+    background: #ff4655;
+    color: white;
+}
+
+.secondary {
+    background: #334565;
+    color: white;
+}
+
+.danger {
+    background: #b82d3a;
+    color: white;
+}
+
+.full {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.red-ball {
+    font-size: 85px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #ff5964;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #c3c9d8;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #8993aa;
+}
+
+/* =========================
+   REGISTER DAN LOGIN
+========================= */
+
+.form-container {
+    width: 90%;
+    max-width: 420px;
+    margin: 65px auto;
+    padding: 35px;
+    background: #202b45;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px #0005;
+}
+
+.form-container h1 {
+    color: #ff5964;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container > p {
+    text-align: center;
+    color: #b9c3d7;
+    margin-bottom: 22px;
+}
+
+.form-container label {
+    display: block;
+    margin: 14px 0 7px;
+    font-size: 14px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #53617c;
+    border-radius: 8px;
+    background: #111a2e;
+    color: white;
+    outline: none;
+}
+
+.form-container input:focus {
+    border-color: #ff5964;
+}
+
+.form-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-link a,
+.back-link {
+    color: #ff6974;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    max-width: 950px;
+    margin: 55px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 35px;
+    color: #ff5964;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    margin-bottom: 10px;
+    color: #c4ccda;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat {
+    background: #202b45;
+    padding: 28px 15px;
+    border-radius: 14px;
+}
+
+.stat h3 {
+    color: #aebbd1;
+    margin-bottom: 15px;
+}
+
+.stat p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff5964;
+}
+
+.dashboard-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   PILIH LEVEL
+========================= */
+
+.level-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.level-container h1 {
+    color: #ff5964;
+    margin-bottom: 12px;
+    font-size: 35px;
+}
+
+.level-container > p {
+    color: #c4ccda;
+    margin-bottom: 35px;
+}
+
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.level-card {
+    background: #202b45;
+    color: white;
+    border: 2px solid #34435f;
+    border-radius: 15px;
+    min-height: 150px;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+.level-card span {
+    font-size: 35px;
+}
+
+.level-card strong {
+    font-size: 20px;
+}
+
+.level-card small {
+    color: #aebbd1;
+}
+
+.level-card:hover:not(:disabled) {
+    border-color: #ff5964;
+    transform: translateY(-4px);
+}
+
+.level-card:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* =========================
+   GAME
+========================= */
+
+.game-container {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-container h1 {
+    color: #ff5964;
+    margin-bottom: 25px;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background: #202b45;
+    padding: 14px 8px;
+    border-radius: 10px;
+}
+
+.info-box span {
+    display: block;
+    color: #aebbd1;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.info-box strong {
+    font-size: 22px;
+    color: #ff5964;
+}
+
+.game-message {
+    background: #202b45;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 9px;
+    color: #dce4f2;
+}
+
+/* PAPAN GAME */
+
+.board {
+    width: min(100%, 480px);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+    padding: 8px;
+    background: #080d19;
+    border-radius: 12px;
+}
+
+.block {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.block:hover {
+    transform: scale(0.92);
+    outline: 2px solid white;
+}
+
+.block.red {
+    background: #ff4655;
+}
+
+.block.blue {
+    background: #398cff;
+}
+
+.block.green {
+    background: #28c98a;
+}
+
+.block.yellow {
+    background: #ffd447;
+}
+
+.block.purple {
+    background: #a56aff;
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 22px 0;
+    flex-wrap: wrap;
+}
+
+.instructions {
+    text-align: left;
+    background: #202b45;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.instructions h3 {
+    color: #ff5964;
+    margin-bottom: 12px;
+}
+
+.instructions ul {
+    padding-left: 22px;
+    line-height: 1.8;
+    color: #c4ccda;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .level-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-container {
+        padding: 12px;
+    }
+
+    .board {
+        gap: 3px;
+        padding: 5px;
+    }
+
+    .form-container {
+        margin: 35px auto;
+        padding: 25px;
+    }
+}

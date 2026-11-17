@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Red Ball Color Blocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>🔴 Login</h1>
+        <p>Masuk untuk melanjutkan permainan</p>
+
+        <form id="loginForm">
+            <label>Username</label>
+            <input
+                type="text"
+                id="loginUsername"
+                placeholder="Masukkan username"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Masukkan password"
+                required
+            >
+
+            <button type="submit" class="btn primary full">
+                Login
+            </button>
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <p class="form-link">
+            Belum punya akun?
+            <a href="register.html">Daftar di sini</a>
+        </p>
+
+        <a href="index.html" class="back-link">← Kembali ke Home</a>
+    </div>
+</body>
+</html>

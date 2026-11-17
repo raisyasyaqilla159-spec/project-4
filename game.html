@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Red Ball Color Blocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h2>🔴 Red Ball Color Blocks</h2>
+        <a href="level.html" class="btn secondary">Pilih Level</a>
+    </header>
+
+    <main class="game-container">
+        <h1>Color Blocks Game</h1>
+
+        <div class="game-info">
+            <div class="info-box">
+                <span>Level</span>
+                <strong id="level">1</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Target</span>
+                <strong id="target">100</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Time</span>
+                <strong id="timer">60</strong>
+            </div>
+        </div>
+
+        <div id="gameMessage" class="game-message">
+            Pilih kelompok blok dengan warna yang sama!
+        </div>
+
+        <div id="board" class="board"></div>
+
+        <div class="game-buttons">
+            <button id="restartBtn" class="btn secondary">
+                Mulai Ulang
+            </button>
+
+            <a href="level.html" class="btn danger">
+                Keluar Game
+            </a>
+        </div>
+
+        <div class="instructions">
+            <h3>📖 Cara Bermain</h3>
+            <ul>
+                <li>Pilih minimal dua blok yang berdekatan dengan warna sama.</li>
+                <li>Blok yang dipilih akan menghilang.</li>
+                <li>Blok di atasnya akan jatuh ke bawah.</li>
+                <li>Semakin banyak blok yang dihapus, semakin besar skor.</li>
+                <li>Capai target skor sebelum waktu habis.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

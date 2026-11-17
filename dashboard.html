@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Red Ball Color Blocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h2>🔴 Red Ball Color Blocks</h2>
+        <button id="logoutBtn" class="btn danger">Logout</button>
+    </header>
+
+    <main class="dashboard">
+        <div class="welcome">
+            <h1>Dashboard</h1>
+            <p>Selamat datang, <strong id="playerName">Player</strong>!</p>
+            <p>Siap untuk bermain?</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>🏆 High Score</h3>
+                <p id="highScore">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>⭐ Last Score</h3>
+                <p id="lastScore">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>🎮 Games Played</h3>
+                <p id="gamesPlayed">0</p>
+            </div>
+        </div>
+
+        <div class="dashboard-actions">
+            <a href="level.html" class="btn primary">Mulai Bermain</a>
+            <a href="index.html" class="btn secondary">Home</a>
+        </div>
+    </main>
+</body>
+</html>
